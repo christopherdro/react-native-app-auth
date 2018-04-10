@@ -53,10 +53,10 @@ public class RNAppAuthModule extends ReactContextBaseJavaModule implements Activ
         reactContext.addActivityEventListener(this);
     }
     @Override
-    public void onIntent(Intent intent) {
+    public void onNewIntent(Intent intent) {
 
     }
-    
+
     @ReactMethod
     public void authorize(
             String issuer,
